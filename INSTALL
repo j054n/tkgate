@@ -52,3 +52,20 @@ INSTALLING MULTIPLE VERSIONS
      make pkgdatadir=/usr/local/share/tkgate-2.2 install
 
   This will install tkgate with the executable name "tkgate22".
+*****************************************************************************
+COMPILE IN DGLAB FROM SOURCES
+
+sudo apt install x11-apps
+sudo apt install git
+git clone https://github.com/j054n/tkgate.git
+sudo apt install build-essentials gawk bison yacc flex tcl-dev tk-dev automake autotools=dev autoconf dh-autoreconf
+autoreconf -fi
+cd tkgate
+./configure
+make
+sudo su
+make install
+tkgate
+
+
+
