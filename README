@@ -1,9 +1,12 @@
-TkGate 2.2 Release notes.
+TkGate 2.2.1 Release notes.
 
 See INSTALL for installation instructions.
 
 *****************************************************************************
 SAVE FILE DIFFERENCES WITH PAST VERSIONS
+
+2.1 and earlier
+   Recovered old version form starlin13 @bitbucket.org patched by j054n @github.com
 
 2.0-b5 and earlier
    The DEMUX device was redesigned in 2.0-b5. When reading earlier save files,
