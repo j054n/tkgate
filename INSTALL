@@ -57,14 +57,17 @@ COMPILE IN DGLAB FROM SOURCES
 
 sudo apt install x11-apps
 sudo apt install git
+sudo apt install build-essentials gawk bison yacc flex tcl-dev tk-dev automake autotools-dev autoconf dh-autoreconf
+
 git clone https://github.com/j054n/tkgate.git
-sudo apt install build-essentials gawk bison yacc flex tcl-dev tk-dev automake autotools=dev autoconf dh-autoreconf
-autoreconf -fi
 cd tkgate
+
+autoreconf -fi
 ./configure
 make
-sudo su
-make install
+
+sudo make install
+
 tkgate
 
 
